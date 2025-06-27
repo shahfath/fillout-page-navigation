@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# 📘 Page Navigation UI with MUI & Drag-and-Drop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a responsive page navigation interface using **Material UI (MUI)** and **@hello-pangea/dnd**. It supports drag-and-drop reordering of the form pages - designed for a dark background with white-themed components.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🧩 Drag-and-drop navigation using `@hello-pangea/dnd`
+- 🎨 Material UI (MUI) styling
+- ⚡ Modular and type-safe code structure using TypeScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+- **React**
+- **TypeScript**
+- **Material UI**
+- **@hello-pangea/dnd**
+- **@mui/icons-material**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+│
+├── App.tsx # Main component 
+├── components/
+│ ├── Footer.tsx # Reusable footer component
+│ ├── PageMenu.tsx # Menu for active Page
+│ └── FormPage.tsx # Content Page
+│
+└── common/
+  └── Constants.tsx # Shared constants used in the app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 1. Clone the repository
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- git clone https://github.com/shahfath/fillout-page-navigation.git
+- cd fillout-page-navigation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 2.  Install dependencies
+- npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Start the development server
+- npm start
+- The app will run at http://localhost:3000

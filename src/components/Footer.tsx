@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import AddIcon from "@mui/icons-material/Add";
-import DescriptionIcon from "@mui/icons-material/Description";
+import NoteAddIcon from "@mui/icons-material/NoteAdd";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import React, { useState } from "react";
 import PageMenu from "./PageMenu";
@@ -180,7 +180,7 @@ const Footer: React.FC<Props> = ({
                               outline: "none",
                               boxShadow: "none",
                             },
-                            borderRadius: 1,
+                            borderRadius: 1.2,
                             p: 1,
                             display: "flex",
                             flexDirection: "row",
@@ -213,8 +213,6 @@ const Footer: React.FC<Props> = ({
                               <MoreVertIcon
                                 fontSize="small"
                                 sx={{
-                                  borderRadius: 1,
-                                  p: 0,
                                   color: "black",
                                   cursor: "pointer",
                                 }}
@@ -307,7 +305,7 @@ const Footer: React.FC<Props> = ({
                   ml: 1,
                   backgroundColor: "#fff",
                   color: "black",
-                  borderRadius: 1,
+                  borderRadius: 1.2,
                   "&:hover": {
                     backgroundColor: "#ccc",
                   },
@@ -341,9 +339,22 @@ const Footer: React.FC<Props> = ({
           },
         }}
       >
-        <Typography variant="h6" gutterBottom>
-          Add a New Page
-        </Typography>
+        <Box
+          display="flex"
+          flexDirection="row"
+          columnGap="0.5rem"
+          alignItems="center"
+          justifyContent="left"
+        >
+          <NoteAddIcon fontSize="small" sx={{ color: "#F59D0E" }} />
+          <Typography
+            variant="caption"
+            sx={{ fontSize: 15, mt: 1 }}
+            gutterBottom
+          >
+            New Page
+          </Typography>
+        </Box>
 
         <TextField
           fullWidth
@@ -351,6 +362,8 @@ const Footer: React.FC<Props> = ({
           onChange={(e) => setNewPageName(e.target.value)}
           autoFocus
           variant="outlined"
+          size="small"
+          label="Enter a Page Name"
           sx={{ mt: 2, mb: 3 }}
         />
 
