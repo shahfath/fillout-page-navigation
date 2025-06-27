@@ -36,8 +36,7 @@ src/
 └── common/
   └── Constants.tsx # Shared constants used in the app
 
-
-
+```markdown
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
