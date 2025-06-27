@@ -38,7 +38,6 @@ export const defaultPages: Page[] = [
         }}
         noValidate
       >
-        {/* Text fields */}
         <Typography variant="h5">What's your name?</Typography>
         <TextField
           variant="filled"
@@ -57,7 +56,6 @@ export const defaultPages: Page[] = [
             },
           }}
         />
-        {/* Submit button */}
         <Button
           variant="contained"
           sx={{ width: "25%" }}
