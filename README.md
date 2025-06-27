@@ -24,6 +24,7 @@ This project implements a responsive page navigation interface using **Material 
 
 ## 📁 Folder Structure
 
+```text
 src/
 │
 ├── App.tsx # Main component 
